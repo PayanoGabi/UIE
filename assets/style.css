@@ -1,0 +1,33 @@
+body{
+  padding:20px 250px 20px 250px;
+}
+header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#header-logo{
+  height:45px;
+  width:640px;
+}
+.topBox {
+  display: flex;
+  justify-content: flex-end;
+  width: 325px;
+  height: 90px;
+  border: 15px solid blue;
+  padding: 20px;
+  margin: 20px;
+}
+.bottoomBox{
+  display: flex
+  justify-content: flex-end;
+  width: 325px;
+  height: 90px;
+  border: 15px solid blue;
+  padding: 20px;
+  margin: 20px;
+}
+h2 {
+  text-align: center;
+}
