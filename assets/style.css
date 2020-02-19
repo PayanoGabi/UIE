@@ -1,10 +1,20 @@
 body{
-  padding:20px 250px 20px 250px;
+  background-color: #f5f3f0;
 }
 header{
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-image:url("../images/background.jpg");
+  background-image: cover;
+  padding-bottom: 50px;
+}
+.topHeader{
+    padding:10px 125px 30px 100px;
+    display: flex;
+    flex-direction: column;
+    width:500px;
+    float: left;
 }
 #header-logo{
   height:45px;
@@ -12,22 +22,67 @@ header{
 }
 .topBox {
   display: flex;
-  justify-content: flex-end;
-  width: 325px;
+  display: table;
+  float: right;
+  width: 400px;
   height: 90px;
-  border: 15px solid blue;
-  padding: 20px;
+  border: 15px solid white;
   margin: 20px;
+  box-shadow: 5px 5px #6e7e84;
+  background-color: white;
+
 }
 .bottoomBox{
-  display: flex
-  justify-content: flex-end;
-  width: 325px;
+  display: flex;
+  display: table;
+  justify-content: center;
+  float:right;
+  width: 400px;
   height: 90px;
-  border: 15px solid blue;
-  padding: 20px;
+  border: 15px solid white;
   margin: 20px;
+  box-shadow: 5px 5px #6e7e84;
+  background-color: white;
+}
+#boxButton{
+  background-color: #c56c76;
+  padding:0.45em 1.6em 0.375em;
+  border-radius: 10px;
+}
+h1{
+  color:white;
 }
 h2 {
-  text-align: center;
+  color:#5c626a;
+  line-height: 2.5px;
+}
+a{
+color:#c56c76;
+}
+hr{
+  color: white;
+}
+.speakersection{
+  padding: 0 24px;
+  box-sizing: border-box;
+  max-width: 61em;
+  width: 100%;
+  margin: 0 auto;
+  padding:25%;
+}
+.speakersection ul{
+  display: flex;
+  flex-direction: row;
+
+}
+#footer-logo{
+  width:200px;
+  height: 60px;
+
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #797166;
 }
