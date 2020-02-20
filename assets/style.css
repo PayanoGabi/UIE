@@ -54,7 +54,6 @@ h1{
 }
 h2 {
   color:#5c626a;
-  line-height: 2.5px;
 }
 a{
 color:#c56c76;
@@ -63,17 +62,34 @@ hr{
   color: white;
 }
 .speakersection{
-  padding: 0 24px;
-  box-sizing: border-box;
+  padding-top: 32%;
+  padding-left: 2%;
+  padding-right: 1%;
+  box-sizing:border-box;
   max-width: 61em;
   width: 100%;
   margin: 0 auto;
-  padding:25%;
 }
 .speakersection ul{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
   flex-direction: row;
+  list-style: none;
+  width:285px;
+  height:215px;
 
+}
+.speakersection img {
+  border-radius: 50%;
+  border-width: 1px;
+  margin: 0em;
+  width: 90px;
+  height:90px;
+}
+.speakersection p {
+  margin-top: 0.8em;
+  margin-bottom: 0;
 }
 #footer-logo{
   width:200px;
