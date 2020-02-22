@@ -69,15 +69,15 @@ hr{
   max-width: 61em;
   width: 100%;
   margin: 0 auto;
+
 }
 .speakersection ul{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  flex-direction: row;
+  grid-gap: 150px;
   list-style: none;
-  width:285px;
-  height:215px;
+  grid-auto-rows: 100px;
+
 
 }
 .speakersection img {
@@ -89,7 +89,7 @@ hr{
 }
 .speakersection p {
   margin-top: 0.8em;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 #footer-logo{
   width:200px;
