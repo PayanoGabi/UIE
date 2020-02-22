@@ -69,15 +69,19 @@ hr{
   max-width: 61em;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: 'Noto Serif', sans-serif;
 
 }
 .speakersection ul{
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 150px;
   list-style: none;
-  grid-auto-rows: 100px;
-
+  grid-row-gap: 20px;
 
 }
 .speakersection img {
@@ -90,6 +94,15 @@ hr{
 .speakersection p {
   margin-top: 0.8em;
   margin-bottom: 0px;
+}
+.speakersection a {
+  font-weight: bold;
+}
+.li-box{
+  border: 15px solid white;
+  margin: 20px;
+  box-shadow: 5px 5px #6e7e84;
+  background-color: white;
 }
 #footer-logo{
   width:200px;
