@@ -9,18 +9,23 @@ header{
   background-image: cover;
   padding-bottom: 50px;
 }
-.topHeader{
-    padding:10px 125px 30px 100px;
-    display: flex;
-    flex-direction: column;
-    width:500px;
-    float: left;
+
+.topHeader h2 {
+  text-align: center;
 }
+
 #header-logo{
   height:45px;
   width:640px;
 }
-.topBox {
+.toptable{
+  margin-left:auto;
+  margin-right:auto;
+  table-layout: auto;
+  width: 100%;  
+}
+
+.boxsection {
   display: flex;
   display: table;
   float: right;
@@ -30,20 +35,9 @@ header{
   margin: 20px;
   box-shadow: 5px 5px #6e7e84;
   background-color: white;
+}
 
-}
-.bottoomBox{
-  display: flex;
-  display: table;
-  justify-content: center;
-  float:right;
-  width: 400px;
-  height: 90px;
-  border: 15px solid white;
-  margin: 20px;
-  box-shadow: 5px 5px #6e7e84;
-  background-color: white;
-}
+
 #boxButton{
   background-color: #c56c76;
   padding:0.45em 1.6em 0.375em;
@@ -62,7 +56,7 @@ hr{
   color: white;
 }
 .speakersection{
-  padding-top: 32%;
+  padding-top: 10%;
   padding-left: 2%;
   padding-right: 1%;
   box-sizing:border-box;
@@ -72,6 +66,10 @@ hr{
   margin-bottom: 10px;
   font-family: 'Noto Serif', sans-serif;
 
+}
+.speakersection h2 {
+  text-align: left;
+  margin-top: -40px;
 }
 .speakersection ul{
   display: flex;
@@ -106,7 +104,9 @@ hr{
 }
 #footer-logo{
   width:200px;
-  height: 60px;
+  height: 62px;
+  margin-top: 69px;
+  position: absolute;
 
 }
 footer{
@@ -114,4 +114,10 @@ footer{
   justify-content: center;
   align-items: center;
   background-color: #797166;
+  padding: 100px;
+}
+footer p {
+display: table;
+margin: 25px;
+width: 30%;
 }
