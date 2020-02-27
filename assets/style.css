@@ -12,6 +12,7 @@ header{
 
 .topHeader h2 {
   text-align: center;
+  font-family: 'Noto Serif', sans-serif;
 }
 
 #header-logo{
@@ -19,6 +20,7 @@ header{
   width:640px;
 }
 .toptable{
+  .toptable td li{
   margin-left:auto;
   margin-right:auto;
   table-layout: auto;
@@ -28,15 +30,19 @@ header{
 .toptable h3{
   text-align: left;
   margin: 20px;
+  color:#5c626a;
+  font-family: 'Roboto',sans-serif ;
 }
 table tr td:nth-child(1) {
   height: 10px;
 
 }
 
-  .toptable td li{
     margin-top: 20px;
-  }
+    list-style-type: square;
+    color: #797166;
+    font-family: 'Roboto',sans-serif ;
+}
 .boxsection {
   display: flex;
   display: table;
@@ -48,6 +54,7 @@ table tr td:nth-child(1) {
   box-shadow: 5px 5px #6e7e84;
   background-color: white;
   margin-top: -65px;
+  font-family: 'Roboto',sans-serif ;
 }
 .boxsection2 {
   display: flex;
@@ -60,14 +67,19 @@ table tr td:nth-child(1) {
   box-shadow: 5px 5px #6e7e84;
   background-color: white;
   margin-top: -150px;
+  font-family: 'Roboto',sans-serif ;
 }
 #boxButton{
   background-color: #c56c76;
   padding:0.45em 1.6em 0.375em;
   border-radius: 10px;
+  border-color: #e35772;
+  display: block;
+  margin: 0 auto;
 }
 h1{
   color:white;
+  font-size: 20px;
 }
 h2 {
   color:#5c626a;
@@ -78,7 +90,7 @@ color:#c56c76;
 hr{
   color: white;
 }
-.speakersection{
+.speakerSection{
   padding-top: 10%;
   padding-left: 2%;
   padding-right: 1%;
@@ -90,34 +102,46 @@ hr{
   font-family: 'Noto Serif', sans-serif;
 
 }
-.speakersection h2 {
+.speakerSection h2 {
   text-align: left;
-  margin-top: -40px;
+  margin-top: -10%;
 }
-.speakersection ul{
+.speakerSection ul{
   display: flex;
   justify-content: space-between;
   align-content: space-around;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 150px;
+  grid-gap: 45px;
   list-style: none;
   grid-row-gap: 20px;
 
 }
-.speakersection img {
+.speakerSection img {
   border-radius: 50%;
   border-width: 1px;
   margin: 0em;
   width: 90px;
   height:90px;
 }
-.speakersection p {
+.speakerSection p {
   margin-top: 0.8em;
   margin-bottom: 0px;
+  font-size: 15px;
 }
-.speakersection a {
+.speakerSection a {
   font-weight: bold;
+  display: table-cell;
+  width: 75%;
+  padding-left: 0.75em;
+  vertical-align: top;
+}
+#speakerbutton{
+  background-color: #c56c76;
+  display:block;
+  margin:0 auto;
+  padding: 10px;
+  border-color:#e35772;
 }
 .li-box{
   border: 15px solid white;
@@ -125,10 +149,11 @@ hr{
   box-shadow: 5px 5px #6e7e84;
   background-color: white;
 }
+
 #footer-logo{
   width:200px;
   height: 62px;
-  margin-top: 69px;
+  margin-top: 15%;
   position: absolute;
 
 }
@@ -143,4 +168,81 @@ footer p {
 display: table;
 margin: 25px;
 width: 30%;
+}
+@media only screen and (max-width: 1020px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+  }
+  header h2 {
+    text-align: center;
+  }
+  .toptable{
+
+    flex-direction: column;
+        display: inline-grid
+
+  }
+  #header-logo{
+    max-width: 80%;
+    height: auto;
+    margin: auto;
+
+  }
+  .toptable{
+    display: flow-root;
+  }
+  .topHeader h2 {
+    text-align: left;
+    font-size: 22px;
+    margin-left: 10px;
+  }
+
+  .speakerSection{
+    display: flex;
+    flex-direction: column;
+    margin: 10px, 20px;
+  }
+  .speakerSection ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .speakerSection li img {
+    max-width: 10%;
+  }
+  .li-box{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .li-box a{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  table {
+    display: flex;
+  }
+  .boxsection{
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+  img {
+    max-width: 10%;
+  }
+  footer{
+    padding:10%;
+    flex-direction: column;
+  }
+  h2{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+    margin: auto;
+  }
 }
